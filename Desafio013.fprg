@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:01:11 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MDA6NDUgIjsyNjkw"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MDA6NTQgIjsxO0dhYnJpZWwuTG9wZXM7TlQzNTsyMDI0LTAzLTA0OyIwMToyNzo1NSAiO2Rlc2FmaW8wMTMuZnByZzs2OTgz"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MDE6MTEgIjsxOzI3OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="termoU, TermoD, i, raz&#227;o, termo, termoF" type="Integer" array="False" size=""/>
+            <input variable="termoU"/>
+            <input variable="raz&#227;o"/>
+            <assign variable="termoD" expression="termoU*raz&#227;o^(5-1)"/>
+            <output expression="termoD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

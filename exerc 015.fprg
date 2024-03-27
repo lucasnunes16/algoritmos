@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas.nunes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 04:13:44 "/>
+        <attribute name="created" value="bHVjYXMubnVuZXM7REVTS1RPUC04SUZPSUVHOzIwMjQtMDEtMjQ7IjAzOjA0OjM5ICI7MzM5OA=="/>
+        <attribute name="edited" value="bHVjYXMubnVuZXM7REVTS1RPUC04SUZPSUVHOzIwMjQtMDEtMzE7IjA0OjEzOjQ0ICI7NDszNTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta, x1, x2" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="delta" newline="True"/>
+            <if expression="delta&gt;=0">
+                <then>
+                    <assign variable="x1" expression="(-b+delta^(1/2))/(2*a)"/>
+                    <assign variable="x2" expression="(-b-delta^(1/2))/(2*a)"/>
+                    <output expression="x1" newline="True"/>
+                    <output expression="x2" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;incalculavel&quot;" newline="True"/>
+                    <breakpoint expression="" always="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="delta" type="Real" variable="delta">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+            <parameter name="b" type="Integer" array="False"/>
+            <parameter name="c" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="delta" type="Real" array="False" size=""/>
+            <assign variable="delta" expression="b*b-4*a*c"/>
+            <output expression="delta" newline="True"/>
+        </body>
+    </function>
+    <function name="raiz" type="None" variable="">
+        <parameters>
+            <parameter name="a" type="Real" array="False"/>
+            <parameter name="b" type="Real" array="False"/>
+            <parameter name="delta" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x1, x2" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="(-b+delta^(1/2))/(2*a)"/>
+            <assign variable="x2" expression="(-b-delta^(1/2))/(2*a)"/>
+            <output expression="x1" newline="True"/>
+            <output expression="x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

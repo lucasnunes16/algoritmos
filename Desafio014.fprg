@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:10:26 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MDM6MjIgIjsyNjg4"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MTA6MjYgIjsyOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Celsius, Fahrenheit" type="Real" array="False" size=""/>
+            <input variable="Fahrenheit"/>
+            <assign variable="Celsius" expression="(Fahrenheit-32)*5/9"/>
+            <output expression="Celsius" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

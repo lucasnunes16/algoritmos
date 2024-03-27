@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas.nunes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-21 02:20:18 "/>
+        <attribute name="created" value="bHVjYXMubnVuZXM7TlQyNTsyMDI0LTAyLTIxOyIwMTozOToxOCAiOzI1OTA="/>
+        <attribute name="edited" value="bHVjYXMubnVuZXM7TlQyNTsyMDI0LTAyLTIxOyIwMjoyMDoxOCAiOzI7MjY5MA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="opc" type="Integer" array="False" size=""/>
+            <assign variable="opc" expression="-1"/>
+            <while expression="opc!=0">
+                <output expression="&quot;############# EMPRESA XYZ ##############&quot;" newline="True"/>
+                <output expression="&quot;1.incluir Produto&quot;" newline="True"/>
+                <output expression="&quot;2. Alterar Produto&quot;" newline="True"/>
+                <output expression="&quot;3. Excluir Produto&quot;" newline="True"/>
+                <output expression="&quot;4. Listar Produtos&quot;" newline="True"/>
+                <output expression="&quot;0. Sair&quot;" newline="True"/>
+                <input variable="opc"/>
+                <if expression="opc&gt;=0 &amp;&amp; opc&lt;=4">
+                    <then>
+                        <if expression="opc==1">
+                            <then>
+                                <output expression="&quot;Opcao 1&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="opc==2">
+                                    <then>
+                                        <output expression="&quot;Opcao 2&quot;" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="opc==3">
+                                            <then>
+                                                <output expression="&quot;Opcao 3&quot;" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <if expression="opc==4">
+                                                    <then>
+                                                        <output expression="&quot;Opcao 4&quot;" newline="True"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;selecione uma opcao entre 0 e 4&quot;" newline="True"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

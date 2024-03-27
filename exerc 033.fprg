@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas.nunes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:30:07 "/>
+        <attribute name="created" value="bHVjYXMubnVuZXM7TlQyNTsyMDI0LTAzLTA0OyIwOTowOTowOSAiOzI1OTc="/>
+        <attribute name="edited" value="bHVjYXMubnVuZXM7TlQyNTsyMDI0LTAzLTA0OyIwOTozMDowNyAiOzE7MjY5Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="valor, u, d, c" type="Integer" array="False" size=""/>
+            <input variable="valor"/>
+            <assign variable="u" expression="valor%10"/>
+            <assign variable="d" expression="(valor % 100) / 10"/>
+            <assign variable="c" expression="valor/100"/>
+            <assign variable="valor" expression="u * 100 + d * 10 + c"/>
+            <output expression="valor" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas.nunes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 02:31:17 "/>
+        <attribute name="created" value="bHVjYXMubnVuZXM7REVTS1RPUC04SUZPSUVHOzIwMjQtMDEtMjQ7IjA0OjQzOjEyICI7MzM5Mw=="/>
+        <attribute name="edited" value="bHVjYXMubnVuZXM7REVTS1RPUC04SUZPSUVHOzIwMjQtMDEtMjk7IjAyOjMxOjE3ICI7NDszNTA5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Integer" array="False" size=""/>
+            <assign variable="b" expression="1"/>
+            <while expression="b&lt;=100">
+                <if expression="b % 13 == 0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <for variable="a" start="1" end="100" direction="inc" step="2">
+                <if expression="a % 2 != 0">
+                    <then>
+                        <if expression="a % 3 == 0">
+                            <then/>
+                            <else/>
+                        </if>
+                        <output expression="a" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

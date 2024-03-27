@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas.nunes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-24 03:16:31 "/>
+        <attribute name="created" value="bHVjYXMubnVuZXM7REVTS1RPUC04SUZPSUVHOzIwMjQtMDEtMjQ7IjAzOjA0OjM5ICI7MzM5OA=="/>
+        <attribute name="edited" value="bHVjYXMubnVuZXM7REVTS1RPUC04SUZPSUVHOzIwMjQtMDEtMjQ7IjAzOjE2OjMxICI7MTszNTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, delta" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="delta" expression="b^2-4*a*c"/>
+            <output expression="delta" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 01:30:00 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMTE6Mjg6MjggIjsyNzAx"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDE6MzA6MDAgIjsxOzI3OTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cateto1, cateto2, hipotenusa" type="Integer" array="False" size=""/>
+            <input variable="cateto1"/>
+            <input variable="cateto2"/>
+            <assign variable="hipotenusa" expression="(cateto1)^2 + (cateto2)^2"/>
+            <output expression="hipotenusa" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

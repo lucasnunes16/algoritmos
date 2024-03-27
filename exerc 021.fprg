@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="lucas.nunes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-14 02:14:56 "/>
+        <attribute name="created" value="bHVjYXMubnVuZXM7TlQyNTsyMDI0LTAyLTE0OyIwMToyOTo1NSAiOzI1OTI="/>
+        <attribute name="edited" value="bHVjYXMubnVuZXM7TlQyNTsyMDI0LTAyLTE0OyIwMjoxNDo1NiAiOzE7MjY5Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="salario, inss" type="Real" array="False" size=""/>
+            <declare name="diastrab" type="Integer" array="False" size=""/>
+            <input variable="nome"/>
+            <input variable="salario"/>
+            <input variable="diastrab"/>
+            <assign variable="salario" expression="int((int((salario/30)*diastrab*100+1)/1000)*100)/100"/>
+            <output expression="salario" newline="True"/>
+            <if expression="salario &lt;= 1412">
+                <then>
+                    <assign variable="inss" expression="(salario * 0.075)"/>
+                    <output expression="inss" newline="True"/>
+                </then>
+                <else>
+                    <if expression="salario &lt;= 2666.68">
+                        <then>
+                            <assign variable="inss" expression="arred(salario * 0.09)-21.18"/>
+                            <output expression="inss" newline="True"/>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="arred" type="Real" variable="valor">
+        <parameters>
+            <parameter name="valor" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="valor" type="Real" array="False" size=""/>
+            <assign variable="valor" expression="int((int(valor*1000+1)/1000)*100)/100"/>
+        </body>
+    </function>
+</flowgorithm>

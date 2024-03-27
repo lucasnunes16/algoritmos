@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:26:20 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MTg6NDkgIjsyNzAz"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MjY6MjAgIjsxOzI3OTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="distancia, valor, kmL, custo" type="Integer" array="False" size=""/>
+            <input variable="distancia"/>
+            <input variable="valor"/>
+            <input variable="kmL"/>
+            <assign variable="custo" expression="valor*(distancia/kmL)"/>
+        </body>
+    </function>
+</flowgorithm>

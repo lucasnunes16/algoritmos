@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="giovanna.luz"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 02:15:51 "/>
+        <attribute name="created" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MTM6MzMgIjsyNjkx"/>
+        <attribute name="edited" value="Z2lvdmFubmEubHV6O05UMzQ7MjAyNC0wMy0wNDsiMDI6MTU6NTEgIjsxOzI4MDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura, raio, volume" type="Integer" array="False" size=""/>
+            <input variable="altura"/>
+            <input variable="raio"/>
+            <assign variable="volume" expression="(3.14*raio^2)*altura"/>
+            <output expression="volume" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
